@@ -1,3 +1,7 @@
 === 0.0.1 2010-11-05
 
 * Initial release
+
+=== 0.0.2 2010-11-05
+
+* Documentation.
