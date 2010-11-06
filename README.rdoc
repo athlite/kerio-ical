@@ -1,6 +1,6 @@
 = kerio-caldav
 
-** http://github.com/athlite/kerio-caldav
+http://github.com/athlite/kerio-caldav
 
 == DESCRIPTION
 
@@ -20,7 +20,10 @@ Setup
 	}
 	
 To get a users calendars
-	KerioCaldav::Kerio.calendars('username')
+	calendars = KerioCaldav::Kerio.calendars('username')
+	calendars.each do |cal|
+		cal.events.each do |event|
+			p event
 
 == REQUIREMENTS
 
