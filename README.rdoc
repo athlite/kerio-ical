@@ -12,11 +12,11 @@ A Ruby interface to Kerio Mail server calendars
 
 == SYNOPSIS
 Setup:
-KerioCaldav::Config.config={
+# KerioCaldav::Config.config={
 	'url' => 'https://mail.example.com/path/to-calendars',
 	'username' =>  'username',
 	'password' => 'password'	
-}
+} #
 	
 To get a users calendars:
 KerioCaldav::Kerio.calendars('username')
