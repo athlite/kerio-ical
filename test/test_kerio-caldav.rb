@@ -1,12 +1,12 @@
 require File.dirname(__FILE__) + '/test_helper.rb'
 
-class TestAthliteKerioCaldav < Test::Unit::TestCase
+class TestKerioCaldav < Test::Unit::TestCase
 
 	def setup
 	end
 
 	def test_transport
-		calendars = AthliteKerioCaldav::Transport.ical(@username, @password, @user)
+		calendars = KerioCaldav::Kerio.calendars(@username, @password, @user)
 		calendars.each do |cal|
 			cal.events.each do |event|
 				puts event.summary

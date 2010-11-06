@@ -1,4 +1,4 @@
-module AthliteKerioCaldav
+module KerioCaldav
 	class HttpParser
 		attr_reader :headers
 		def initialize(raw)

@@ -1,4 +1,4 @@
-module AthliteKerioCaldav
+module KerioCaldav
 	module Transport		
 		class << self
 

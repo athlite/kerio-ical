@@ -1,4 +1,4 @@
-module AthliteKerioCaldav
+module KerioCaldav
 	class Config
 		class << self
 			

@@ -1,5 +1,5 @@
-module AthliteKerioCaldav
-	class Kerio
+module KerioCaldav
+	class Get
 		class << self
 			def calendars(user)
 				Transport::url = Config.url
