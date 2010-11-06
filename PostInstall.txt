@@ -1,0 +1,3 @@
+Thank you for using kerio-caldav.
+
+Make sure you have curl in your path!
