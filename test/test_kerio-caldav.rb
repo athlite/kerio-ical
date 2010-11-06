@@ -4,10 +4,10 @@ class TestKerioCaldav < Test::Unit::TestCase
 
 	def setup
 		KerioCaldav::Config.config = YAML::load_file(File.join(KerioCaldav::ROOT_DIR, "..", "config", "test_config.yml"))
-		@user     = KerioCaldav::Config['user']
+		@user = KerioCaldav::Config['user']
 	end
 
-	def test_transport
+	def test_calendars
 		calendars = KerioCaldav::Get.calendars(@user)
 		calendars.each do |cal|
 			cal.events.each do |event|
