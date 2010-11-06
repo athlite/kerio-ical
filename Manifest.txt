@@ -6,7 +6,7 @@ Rakefile
 lib/kerio-caldav/config.rb
 lib/kerio-caldav/date_time.rb
 lib/kerio-caldav/http_parser.rb
-lib/kerio-caldav/kerio.rb
+lib/kerio-caldav/get.rb
 lib/kerio-caldav/transport.rb
 lib/kerio-caldav.rb
 script/console
