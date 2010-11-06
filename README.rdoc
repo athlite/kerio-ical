@@ -16,11 +16,11 @@ Setup
 	KerioCaldav::Config.config = {
 		'url' => 'https://mail.example.com/path/to-calendars',
 		'username' =>  'username',
-		'password' => 'password'	
+		'password' => 'password'
 	}
 	
-To get a users calendars:
-KerioCaldav::Kerio.calendars('username')
+To get a users calendars
+	KerioCaldav::Kerio.calendars('username')
 
 == REQUIREMENTS
 
