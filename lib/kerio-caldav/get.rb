@@ -9,6 +9,7 @@ module KerioCaldav
 					raise "unauthorized: #{username} can not watch #{user}'s calendar" 
 				end
 				unless parser.ok?
+					print parser.response(:code), " ", parser.response(:message), "\n"
 					raise "error: something went wrong"
 				end
 				parser.to_ical
