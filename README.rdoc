@@ -4,15 +4,11 @@
 
 == DESCRIPTION:
 
-	An interface to Kerio Mail server's calendar
-
-== SUMMARY:
+	A Ruby interface to Kerio Mail server's calendar
 	
-	Not identical to DESCRIPTION
-	
-== FEATURES/PROBLEMS:
+== FEATURES:
 
-* No
+* List a user's calendars.
 
 == SYNOPSIS:
 	
@@ -31,7 +27,7 @@
 
 == INSTALL:
 
-* sude gem install kerio-caldav
+* sudo gem install kerio-caldav
 
 == LICENSE:
 
