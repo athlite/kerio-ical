@@ -1,6 +1,6 @@
 = kerio-caldav
 
-* http://github.com/athlite/kerio-caldav
+** http://github.com/athlite/kerio-caldav
 
 == DESCRIPTION
 
