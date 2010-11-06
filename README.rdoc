@@ -1,6 +1,6 @@
 = athlite-kerio-caldav
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/athlite/kerio-caldav
 
 == DESCRIPTION:
 
