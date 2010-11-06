@@ -10,7 +10,20 @@ module KerioCaldav
 		def to_ical
 			ok? ? Icalendar.parse(@body) : nil
 		end
-
+		
+		def response(key=nil)
+			@http_response_version,@http_response_code,*@http_response_message = @http_response.split
+			@http_response_message = @http_response_message.join(" ")
+			case key
+			when :version
+				@http_response_version
+			when :code
+				@http_response_code
+			when :message
+				@http_response_message
+			end
+		end
+		
 		def ok?
 			@http_response.match(/HTTP\/1.1 200/).nil? ? false : true
 		end
