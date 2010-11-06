@@ -2,30 +2,30 @@
 
 * http://github.com/athlite/kerio-caldav
 
-== DESCRIPTION:
+== DESCRIPTION
 
-	A Ruby interface to Kerio Mail server's calendar
+A Ruby interface to Kerio Mail server calendars
 	
-== FEATURES:
+== FEATURES
 
-* List a user's calendars.
+* List a user calendars.
 
-== SYNOPSIS:
+== SYNOPSIS
 	
-	Set in config.yml or with KerioCaldav::Config.config={} :
-	url: 'https://mail.example.com/path/to-calendars'
-	username: username
-	password: password
+Set in config.yml or with KerioCaldav::Config.config={} :
+url: 'https://mail.example.com/path/to-calendars'
+username: username
+password: password
 	
-	Get a users calendars with:
-  KerioCaldav::Kerio.calendars('username')
+Get a users calendars with:
+KerioCaldav::Kerio.calendars('username')
 
-== REQUIREMENTS:
+== REQUIREMENTS
 
 * icalendar
 * curl must be installed
 
-== INSTALL:
+== INSTALL
 
 * sudo gem install kerio-caldav
 
