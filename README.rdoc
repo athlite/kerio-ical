@@ -19,11 +19,15 @@ Setup
 		'password' => 'password'
 	}
 	
-To get a users calendars
+To get calendars of a specific user
+	
 	calendars = KerioCaldav::Kerio.calendars('username')
+	
 	calendars.each do |cal|
 		cal.events.each do |event|
 			p event
+		end
+	end
 
 == REQUIREMENTS
 
