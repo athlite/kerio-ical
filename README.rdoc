@@ -1,4 +1,4 @@
-= athlite-kerio-caldav
+= kerio-caldav
 
 * http://github.com/athlite/kerio-caldav
 
@@ -16,13 +16,13 @@
 
 == SYNOPSIS:
 	
-	Set in config.yml or with AthliteKerioCaldav::Config.config={} :
+	Set in config.yml or with KerioCaldav::Config.config={} :
 	url: 'https://mail.example.com/path/to-calendars'
 	username: username
 	password: password
 	
 	Get a users calendars with:
-  AthliteKerioCaldav::Kerio.calendars('username')
+  KerioCaldav::Kerio.calendars('username')
 
 == REQUIREMENTS:
 
@@ -31,7 +31,7 @@
 
 == INSTALL:
 
-* sude gem install athlite-kerio-caldav
+* sude gem install kerio-caldav
 
 == LICENSE:
 
