@@ -1,0 +1,16 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/athlite-kerio-caldav/config.rb
+lib/athlite-kerio-caldav/date_time.rb
+lib/athlite-kerio-caldav/http_parser.rb
+lib/athlite-kerio-caldav/kerio.rb
+lib/athlite-kerio-caldav/transport.rb
+lib/athlite-kerio-caldav.rb
+script/console
+script/destroy
+script/generate
+test/test_athlite-kerio-caldav.rb
+test/test_helper.rb
