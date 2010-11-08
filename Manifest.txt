@@ -13,5 +13,5 @@ lib/kerio-ical.rb
 script/console
 script/destroy
 script/generate
-test/test_kerio-ical.rb
+test/test_kerio_ical.rb
 test/test_helper.rb
