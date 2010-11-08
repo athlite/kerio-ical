@@ -32,7 +32,6 @@ To get calendars of a specific user
 == REQUIREMENTS
 
 * icalendar
-* curl must be installed
 
 == INSTALL
 
