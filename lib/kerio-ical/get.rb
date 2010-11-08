@@ -8,7 +8,8 @@ module KerioIcal
 			# returns an array *Icalendar* objects
 			def calendars(user)
 				Transport::url = Config.url
-				result = Transport::get(Config.username, Config.password, user, :net_https)
+				transport = Transport::url.match(/^https:/) ? :net_https : :net_http
+				result = Transport::get(Config.username, Config.password, user, transport)
 				Icalendar.parse(result)
 			end
 		end
