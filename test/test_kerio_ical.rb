@@ -10,11 +10,16 @@ class TestKerioIcal < Test::Unit::TestCase
 	def test_calendars
 		calendars = KerioIcal::Get.calendars(@user)
 		calendars.each do |cal|
+			assert_equal cal.class, Icalendar::Calendar
 			cal.events.each do |event|
-				puts event.summary
-				print event.dtstart.to_time, " - ", event.dtend.to_time
-				print "\n\n"
+				assert_equal event.class, Icalendar::Event
 			end
 		end
 	end
+	
+	def test_inject_username_password
+		url = "http://example.com"
+		assert_equal "http://user:pass@example.com", KerioIcal::Transport::inject_username_password(url, "user", "pass")
+	end
+	
 end

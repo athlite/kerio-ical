@@ -6,7 +6,6 @@ Rakefile
 config/template_config.yml
 lib/kerio-ical/config.rb
 lib/kerio-ical/date_time.rb
-lib/kerio-ical/http_parser.rb
 lib/kerio-ical/get.rb
 lib/kerio-ical/transport.rb
 lib/kerio-ical.rb

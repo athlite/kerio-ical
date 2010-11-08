@@ -14,11 +14,12 @@ module KerioIcal
 	
 	require 'yaml'
 	require 'date'
+	require 'net/http'
+	require 'net/https'
 	require 'rubygems'
 	require 'icalendar'
 	require 'kerio-ical/config'
 	require 'kerio-ical/date_time.rb'
 	require 'kerio-ical/transport'
-	require 'kerio-ical/http_parser'
 	require 'kerio-ical/get'
 end
