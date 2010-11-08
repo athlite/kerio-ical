@@ -7,7 +7,7 @@ $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname
 module KerioIcal
 	
 	# Gem version
-	VERSION = '0.0.3'
+	VERSION = '0.0.1'
 	
 	# Base dir of lib.
 	ROOT_DIR = File.expand_path( File.dirname(__FILE__) )
