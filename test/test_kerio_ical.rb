@@ -1,10 +1,10 @@
 require File.dirname(__FILE__) + '/test_helper.rb'
 
-class TestKerioCaldav < Test::Unit::TestCase
+class TestKerioIcal < Test::Unit::TestCase
 
 	def setup
-		KerioCaldav::Config.config = YAML::load_file(File.join(KerioCaldav::ROOT_DIR, "..", "config", "test_config.yml"))
-		@user = KerioCaldav::Config['user']
+		KerioIcal::Config.config = YAML::load_file(File.join(KerioCaldav::ROOT_DIR, "..", "config", "test_config.yml"))
+		@user = KerioIcal::Config['user']
 	end
 
 	def test_calendars

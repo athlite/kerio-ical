@@ -1,4 +1,4 @@
-module KerioCaldav
+module KerioIcal
 	# Gets the calendar objects	
 	class Get
 		class << self		

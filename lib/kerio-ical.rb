@@ -4,7 +4,7 @@ $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname
 # *Author*::   Thomas T. Eng  (mailto:thomas.tinnesand.eng@gmail.com)
 # *Copyright*:: Copyright (c) 2010 Thomas T. Eng
 # *License*::   The MIT License
-module KerioCaldav
+module KerioIcal
 	
 	# Gem version
 	VERSION = '0.0.3'
@@ -16,9 +16,9 @@ module KerioCaldav
 	require 'date'
 	require 'rubygems'
 	require 'icalendar'
-	require 'kerio-caldav/config'
-	require 'kerio-caldav/date_time.rb'
-	require 'kerio-caldav/transport'
-	require 'kerio-caldav/http_parser'
-	require 'kerio-caldav/get'
+	require 'kerio-ical/config'
+	require 'kerio-ical/date_time.rb'
+	require 'kerio-ical/transport'
+	require 'kerio-ical/http_parser'
+	require 'kerio-ical/get'
 end

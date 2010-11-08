@@ -1,4 +1,4 @@
-module KerioCaldav
+module KerioIcal
 	# Parse calendar response
 	class HttpParser
 		attr_reader :headers

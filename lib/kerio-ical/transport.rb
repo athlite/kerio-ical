@@ -1,4 +1,4 @@
-module KerioCaldav
+module KerioIcal
 	# Methods for accessing curl transport
 	module Transport
 		class << self

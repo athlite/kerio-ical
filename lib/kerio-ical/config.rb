@@ -1,4 +1,4 @@
-module KerioCaldav
+module KerioIcal
 	# Holds config parameters.
 	class Config
 		class << self
