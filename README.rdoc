@@ -1,6 +1,6 @@
-= kerio-caldav
+= kerio-ical
 
-http://github.com/athlite/kerio-caldav
+http://github.com/athlite/kerio-ical
 
 == DESCRIPTION
 
@@ -13,7 +13,7 @@ A Ruby interface to Kerio Mail server calendars
 == SYNOPSIS
 Setup
 
-	KerioCaldav::Config.config = {
+	KerioIcal::Config.config = {
 		'url' => 'https://mail.example.com/path/to-calendars',
 		'username' =>  'username',
 		'password' => 'password'
@@ -21,7 +21,7 @@ Setup
 	
 To get calendars of a specific user
 	
-	calendars = KerioCaldav::Get.calendars('username')
+	calendars = KerioIcal::Get.calendars('username')
 	
 	calendars.each do |cal|
 		cal.events.each do |event|
@@ -36,7 +36,7 @@ To get calendars of a specific user
 
 == INSTALL
 
-* sudo gem install kerio-caldav
+* sudo gem install kerio-ical
 
 == LICENSE:
 
