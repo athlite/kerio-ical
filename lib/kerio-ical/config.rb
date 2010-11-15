@@ -8,6 +8,11 @@ module KerioIcal
 				@config = c
 			end
 			
+			# get config hash
+			def config
+				@config
+			end
+			
 			# access config params
 			def [](key)
 				@config ||= YAML::load_file( File.join(ROOT_DIR, "..", "config", "config.yml") )

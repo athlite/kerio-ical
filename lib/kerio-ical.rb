@@ -5,13 +5,13 @@ $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname
 # *Copyright*:: Copyright (c) 2010 Thomas T. Eng
 # *License*::   The MIT License
 module KerioIcal
-	
+
 	# Gem version
 	VERSION = '0.0.1'
-	
+
 	# Base dir of lib.
 	ROOT_DIR = File.expand_path( File.dirname(__FILE__) )
-	
+
 	require 'yaml'
 	require 'date'
 	require 'net/http'
@@ -21,5 +21,16 @@ module KerioIcal
 	require 'kerio-ical/config'
 	require 'kerio-ical/date_time.rb'
 	require 'kerio-ical/transport'
+	require 'kerio-ical/curl'
 	require 'kerio-ical/get'
+	
+	class << self
+		def logger
+			if Object.const_defined?("RAILS_DEFAULT_LOGGER")
+				RAILS_DEFAULT_LOGGER
+			else
+				@logger ||= Logger.new("/tmp/kerio-ical.log")
+			end
+		end
+	end
 end
