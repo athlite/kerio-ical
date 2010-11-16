@@ -35,6 +35,28 @@ module KerioIcal
 				cals
 			end
 			
+			def multiple_users_calendars(users)
+				
+				users.each do |user|
+					
+					user.instance_eval do 
+						def calendars=(c); @calendars = c; end
+						def calendars; @calendars; end
+						def thread=(t); @thread=t; end
+						def thread; @thread; end
+					end
+					
+					user.thread = Thread.start do
+						_start = Time.now
+						user.calendars = calendars(user) rescue []
+						_end = Time.now
+						user.instance_variable_set '@tps', (_end - _start)
+					end
+				end
+				users.each {|user| user.thread.join }
+				users
+			end
+			
 			def method_missing(name, *args, &block)
 				self.transport = transports.select{|t| "calendars_#{t}".to_sym == name }.first
 				super unless self.transport
