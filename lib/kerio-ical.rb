@@ -6,8 +6,8 @@ $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname
 # *License*::   The MIT License
 module KerioIcal
 
-	# Gem version
-	VERSION = '0.0.1'
+	# Version
+	VERSION = '0.0.2'
 
 	# Base dir of lib.
 	ROOT_DIR = File.expand_path( File.dirname(__FILE__) )
