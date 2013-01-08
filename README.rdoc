@@ -13,21 +13,20 @@ A Ruby interface to Kerio Mail server calendars
 == SYNOPSIS
 Setup
 
-	KerioIcal::Config.config = {
-		'url' => 'https://mail.example.com/path/to-calendars',
-		'username' =>  'username',
-		'password' => 'password'
-	}
+    KerioIcal::Config.config = {
+      'url' => 'https://mail.example.com/path/to-calendars',
+      'username' =>  'username',
+      'password' => 'password'
+    }
 	
 To get calendars of a specific user
 	
-	calendars = KerioIcal::Get.calendars('username')
-	
-	calendars.each do |cal|
-		cal.events.each do |event|
-			p event
-		end
-	end
+    calendars = KerioIcal::Get.calendars('username')
+    calendars.each do |cal|
+      cal.events.each do |event|
+        p event
+      end
+    end
 
 == REQUIREMENTS
 
